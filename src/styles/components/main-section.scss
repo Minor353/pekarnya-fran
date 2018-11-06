@@ -1,0 +1,44 @@
+.main-section_title {
+    span {
+        font-family: 'BERNIER', sans-serif;
+        font-size: 105px; 
+        color: $white;
+    }
+    span:nth-child(2) {
+        color: $yellow;
+    }    
+}
+
+
+.main-section_features-item {
+    font-family: 'GothamProBold', sans-serif;
+    font-size: 24px;
+    color: $white;
+    span {
+        color: $yellow;
+    }
+}
+
+.main-section_features-footer-title {
+    font-family: 'GothamProBold', sans-serif;
+    font-size: 18px;
+    color: $white;
+}
+
+.main-section_features-footer-text {
+    font-family: 'GothamProLight', sans-serif;
+    font-size: 18px;
+    color: $yellow;
+}
+
+.main-section_features-link {
+    font-family: 'GothamProBlack', sans-serif;
+    font-size: 16px;
+    color: $black;
+    text-decoration: none;
+    span {
+        font-family: 'GothamProMedium', sans-serif;
+        font-size: 12px;
+        color: #AA8800;
+    }
+}

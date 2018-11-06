@@ -1,0 +1,20 @@
+.offer_content-title {
+    font-family: 'GothamProBlack', sans-serif;
+    font-size: 48px;
+    color: $white;
+    span {
+        color: $yellow;
+    }  
+}
+
+.offer_content-text {
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 32px;
+    color: $white;
+}
+
+.offer_content-link {
+    font-family: 'GothamProBlack';
+    font-size: 16px;
+    color: $black;  
+}
