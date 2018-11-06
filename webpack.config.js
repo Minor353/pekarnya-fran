@@ -5,6 +5,7 @@ const config = {
     entry: {
         index: './src/scripts/index.js'
       },
+      mode: 'development',
     output: {
         filename: '[name]-min.js'
     },
