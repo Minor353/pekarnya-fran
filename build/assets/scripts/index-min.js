@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nconsole.log('work');\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+eval("\n\n$('.js-accordeon dd:not(:first)').slideUp();\n\n$('.js-accordeon dt').on('click', function (ev) {\n  $(ev.target).next('dd').slideToggle().siblings('dd').slideUp();\n});\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
 
 /***/ })
 

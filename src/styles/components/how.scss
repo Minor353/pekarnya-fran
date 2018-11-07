@@ -1,17 +1,96 @@
+.how {
+    position: relative;
+    margin-top: -75px;
+    margin-bottom: -90px;
+    padding: 100px 0;
+}
+
+.how_content {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+}
+
+.how_content-decor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/content/patern-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
 .how_content-title {
     font-family: 'GothamProBlack';
     font-size: 48px;
-    color: $black;  
+    color: $black; 
+    text-align: center;
+    margin-bottom: 70px; 
+}
+
+.how_content-features {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .how_features-title {
     font-family: 'GothamProBold';
     font-size: 20px;
+    line-height: 35px;
     color: $black; 
+    width: 175px;
+    text-align: center;
+}
+
+.how_features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how_features-item:nth-child(1) {
+    width: 100%;
+    margin-bottom: -80px;
+}
+
+.how_features-item:nth-child(2) {
+    width: 50%;
+}
+
+.how_features-item:nth-child(3) {
+    width: 50%;
+}
+
+.how_features-item:nth-child(4) {
+    width: 100%;
+    margin-top: -30px;
 }
 
 .how_content-link {
     font-family: 'GothamProBlack';
     font-size: 16px;
-    color: $black;  
+    color: $black;
+    padding: 27px 37px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: $yellow;
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    box-shadow: 0 3px 25px #B5B5B5;  
+}
+
+.how_features-item-img {
+    width: 185px;
+    height: 175px;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }

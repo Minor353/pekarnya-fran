@@ -1,7 +1,19 @@
+.main-section {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.main-section_content {
+    display: flex;
+    
+}
+
+
+
 .main-section_title {
     span {
         font-family: 'BERNIER', sans-serif;
-        font-size: 105px; 
+        font-size: 100px; 
         color: $white;
     }
     span:nth-child(2) {
@@ -9,20 +21,38 @@
     }    
 }
 
+.main-section_features {
+    padding: 0;
+}
+
+.main-section_features-wrapp {
+    margin-left: auto;
+}
+
 
 .main-section_features-item {
     font-family: 'GothamProBold', sans-serif;
     font-size: 24px;
-    color: $white;
-    span {
+    color: $yellow;
+    margin-bottom: 30px;
+    span:nth-child(1) {
+        color: $white;
+    }
+    span:nth-child(2) {
         color: $yellow;
     }
+}
+
+.main-section_features-footer {
+    width: 330px;
+    margin-top: 100px;
 }
 
 .main-section_features-footer-title {
     font-family: 'GothamProBold', sans-serif;
     font-size: 18px;
     color: $white;
+    margin-bottom: 10px;
 }
 
 .main-section_features-footer-text {
@@ -36,9 +66,17 @@
     font-size: 16px;
     color: $black;
     text-decoration: none;
+    padding: 16px 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     span {
         font-family: 'GothamProMedium', sans-serif;
         font-size: 12px;
         color: #AA8800;
+        line-height: 26px;
     }
 }

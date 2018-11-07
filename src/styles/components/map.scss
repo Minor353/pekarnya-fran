@@ -1,13 +1,49 @@
+.map {
+    height: 700px;
+    background-color: grey;
+}
+
+.map_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.map_content-contact {
+    margin: auto;
+    background-color: $white;
+    padding: 40px 25px;
+    border-radius: 5px;
+}
+
 .map_contact-adress {
+    border-bottom: 1px solid $yellow;
+    padding-bottom: 20px;
+    padding-right: 75px;
+    margin-bottom: 20px;
     div:first-child {
         font-family: 'GothamProLight', sans-serif;
         font-size: 15px;
         color: $dark-grey;
+        margin-bottom: 10px;
     }
     div:nth-child(2) {
         font-family: 'GothamProBold', sans-serif;
         font-size: 20px;
         color: $dark-grey;
+        .fas {
+            margin-right: 17px;
+            color: $yellow; 
+        }
     }
 }
 
@@ -16,10 +52,15 @@
         font-family: 'GothamProLight', sans-serif;
         font-size: 15px;
         color: $dark-grey;
+        margin-bottom: 10px;
     }
     div:nth-child(2) {
         font-family: 'GothamProBold', sans-serif;
         font-size: 20px;
         color: $dark-grey;
+        .fas {
+            margin-right: 17px;
+            color: $yellow;
+        }
     }
 }
