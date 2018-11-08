@@ -24,6 +24,8 @@
 .faq_content {
     width: 1100px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .faq_content-main {
@@ -55,7 +57,7 @@
 }
 
 .faq_accordeon-header-text {
-    font-family: 'GothamProLight';
+    font-family: 'GothamProRegular';
     font-size: 16px;
     color: $dark-grey;  
 }
@@ -80,6 +82,7 @@ dd {
   margin: 0;
   padding: 25px;
   border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.4);
 }
   
   h3 {

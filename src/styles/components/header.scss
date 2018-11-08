@@ -1,6 +1,8 @@
 .header {
     display: flex;
     width: 1100px;
+    padding: 0 20px;
+    box-sizing: border-box;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -21,18 +23,12 @@
     font-family: 'GothamProBold', sans-serif;
     font-size: 20px;
     color: $white;
+    .fas {
+        margin-right: 10px;
+    }
 }
 
-.nav_wrap {
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
 
-.nav_wrap-item {
-    list-style-type: none;
-    margin-left: 40px;
-}
 
 .header-content-wrapp {
     display: flex;

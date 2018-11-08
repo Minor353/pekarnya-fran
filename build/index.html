@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="shortcut icon" href="" type="image/png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/app.min.css">
   </head>
@@ -188,8 +189,18 @@
           <div class="reviews_slider">
             <div class="reviews_slider-wrap">
               <div class="reviews_slider-item">
-                <div class="reviews_slider-item-img"><img src="assets/images/content/ava1.jpg" alt="Фото"></div>
+                <div class="reviews_slider-item-img"><img src="assets/images/content/ava1.png" alt="Фото"></div>
                 <div class="reviews_slider-item-name">Игорь Романенко</div>
+                <div class="reviews_slider-item-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div>
+              </div>
+              <div class="reviews_slider-item">
+                <div class="reviews_slider-item-img"><img src="assets/images/content/ava1.png" alt="Фото"></div>
+                <div class="reviews_slider-item-name">Арнольд Романенко</div>
+                <div class="reviews_slider-item-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div>
+              </div>
+              <div class="reviews_slider-item">
+                <div class="reviews_slider-item-img"><img src="assets/images/content/ava1.png" alt="Фото"></div>
+                <div class="reviews_slider-item-name">Дмитрий Романенко</div>
                 <div class="reviews_slider-item-text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div>
               </div>
             </div>
@@ -215,6 +226,38 @@
       </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/scripts/index-min.js"></script>
+    <script type="text/javascript">
+      // Определяем переменную map
+      var map;
+  
+      // Функция initMap которая отрисует карту на странице
+      function initMap() {
+  
+  
+        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+        map = new google.maps.Map(document.getElementById('map'), {
+          // При создании объекта карты необходимо указать его свойства
+          // center - определяем точку на которой карта будет центрироваться
+          center: {
+            lat: 48.443478,
+            lng: 35.001698
+          },
+          // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+          zoom: 16,
+          scrollwheel: false
+        });
+  
+        var marker = new google.maps.Marker({
+          position: {
+            lat: 48.443478,
+            lng: 35.001698
+          },
+          map: map,
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG94N1bV6jGbbgTdW0jFgUDuajVBLt99k&callback=initMap"></script>
   </body>
 </html>

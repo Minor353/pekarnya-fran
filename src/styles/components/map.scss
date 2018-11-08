@@ -1,6 +1,20 @@
 .map {
     height: 700px;
     background-color: grey;
+    position: relative;
+}
+
+.map_decor-top {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    background-image: url('../images/content/stul4ak.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    z-index: 999;
 }
 
 .map_content {
@@ -23,6 +37,7 @@
     background-color: $white;
     padding: 40px 25px;
     border-radius: 5px;
+    z-index: 999;
 }
 
 .map_contact-adress {

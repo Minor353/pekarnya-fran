@@ -1,6 +1,33 @@
+.nav_wrap {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_wrap-item {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
 .nav_item-link {
     font-family: 'GothamProRegular', sans-serif;
     font-size: 18px;
     color: $white;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_wrap-item {
+    padding-bottom: 25px;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s;
+}
+
+.nav_wrap-item:hover {
+    border-bottom: 4px solid $yellow;
+    transition: 0.3s;
+    .nav_item-link {
+        color: $yellow;
+        transition: 0.3s;
+    }
 }

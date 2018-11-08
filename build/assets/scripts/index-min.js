@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n$('.js-accordeon dd:not(:first)').slideUp();\n\n$('.js-accordeon dt').on('click', function (ev) {\n  $(ev.target).next('dd').slideToggle().siblings('dd').slideUp();\n});\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+eval("\n\n$('.js-accordeon dd:not(:first)').slideUp();\n\n$('.js-accordeon dt').on('click', function (ev) {\n  $(ev.target).next('dd').slideToggle().siblings('dd').slideUp();\n});\n\n$('.reviews_slider-wrap').slick({\n  centerMode: true,\n  centerPadding: '200px',\n  slidesToShow: 1,\n  arrows: false,\n  infinite: true,\n  autoplay: true,\n  autoplaySpeed: 5000,\n  responsive: [{\n    breakpoint: 768,\n    settings: {\n      arrows: false,\n      centerMode: true,\n      centerPadding: '40px',\n      slidesToShow: 3\n    }\n  }, {\n    breakpoint: 480,\n    settings: {\n      arrows: false,\n      centerMode: true,\n      centerPadding: '40px',\n      slidesToShow: 1\n    }\n  }]\n});\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
 
 /***/ })
 
