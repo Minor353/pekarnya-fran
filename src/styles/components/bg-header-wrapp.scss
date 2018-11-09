@@ -4,4 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20px;
+    @include bigtablet(){
+        padding-bottom: 130px;
+    }
+    @include mintablet(){
+        padding-top: 120px;
+    }
 }

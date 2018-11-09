@@ -16,10 +16,32 @@ $purple: #402E8B;
 $carroty: #D84D41;
 
 
+$mindescktop: 1100px;
+
+$bigtablet: 900px;
+
 $tablet: 768px;
+
+$mintablet: 700px;
+
+$maxphone: 600px;
 
 $phone: 480px;
 
+$minphone: 400px;
+
+
+@mixin mindescktop {
+    @media screen and (max-width:$mindescktop) {
+        @content;
+    }
+}
+
+@mixin bigtablet {
+    @media screen and (max-width:$bigtablet) {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media screen and (max-width:$tablet) {
@@ -27,8 +49,26 @@ $phone: 480px;
     }
 }
 
-@mixin mobile {
+@mixin mintablet {
+    @media screen and (max-width:$mintablet) {
+        @content;
+    }
+}
+
+@mixin maxphone {
+    @media screen and (max-width:$maxphone) {
+        @content;
+    }
+}
+
+@mixin phone {
     @media screen and (max-width:$phone) {
+        @content;
+    }
+}
+
+@mixin minphone {
+    @media screen and (max-width:$minphone) {
         @content;
     }
 }

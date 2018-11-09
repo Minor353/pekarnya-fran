@@ -7,6 +7,16 @@
     height: 650px;
     width: 100%;
     position: relative;   
+    @include mindescktop(){
+        background-image: url('../images/content/whaaat.png');
+        background-position: center;
+    }
+    @include phone(){
+        padding-bottom: 245px;
+     }
+     @include minphone(){
+        padding-bottom: 300px;
+    }
 }
 
 .faq_content-decor-top {
@@ -19,6 +29,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 150px;
+    @include phone(){
+        height: 40px;
+        top: -40px;
+     }
+     @include minphone(){
+        top: -39px;
+    }
 }
 
 .faq_content {
@@ -26,11 +43,24 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    @include mindescktop(){
+        width: 100%;
+    }
 }
 
 .faq_content-main {
     width: 50%;
     margin-top: 120px;
+    @include mindescktop(){
+        margin: 0 auto;
+        margin-top: 120px;
+    }
+    @include bigtablet(){
+        margin-top: 30px;
+    }
+    @include maxphone(){
+        width: 90%;
+     }
 }
 
 .faq_content-title {
@@ -38,6 +68,13 @@
     font-size: 48px;
     color: $black;
     text-align: center;  
+    @include bigtablet(){
+        font-size: 40px;
+    }
+    @include phone(){
+        font-size: 26px;
+        margin-bottom: 20px;
+     }
 }
 
 .faq_content-subtitle {
@@ -45,6 +82,12 @@
     font-size: 24px;
     color: $vinous; 
     text-align: center; 
+    @include bigtablet(){
+        font-size: 20px;
+    }
+    @include phone(){
+        font-size: 16px;
+     }
 }
 
 .faq_accordeon-header-title {

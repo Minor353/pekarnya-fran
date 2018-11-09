@@ -14,6 +14,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 150px;
+    @include phone(){
+        height: 60px;
+        top: -60px;
+     }
+     @include minphone(){
+        top: -59px;   
+    }
 }
 
 .reviews_content {
@@ -22,12 +29,21 @@
     padding: 0 20px;
     box-sizing: border-box;
     text-align: center;
+    @include mindescktop(){
+        width: 100%;
+    }
 }
 
 .reviews_content-title {
     font-family: 'GothamProBlack', sans-serif;
     font-size: 48px;
     color: $black;
+    @include bigtablet(){
+        font-size: 40px;
+    }
+    @include phone(){
+        font-size: 32px;
+     }
 }
 
 
@@ -49,6 +65,10 @@
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
+    @include phone(){
+        margin-left: 5px;
+        margin-right: 5px;
+     }
 }
 
 .reviews_slider-item-img {
@@ -71,6 +91,9 @@
     font-size: 28px;
     color: $black;
     margin-bottom: 30px;
+    @include bigtablet(){
+        font-size: 24px;
+    }
 }
 
 .reviews_slider-item-text {

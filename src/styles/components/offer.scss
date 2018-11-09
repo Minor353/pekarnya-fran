@@ -6,7 +6,12 @@
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 230px;
-
+    @include phone(){
+        padding-top: 150px;
+     }
+     @include minphone(){
+        padding-bottom: 130px;   
+    }
 }
 
 .offer_content {
@@ -14,6 +19,9 @@
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    @include mindescktop(){
+        width: 100%;
+    }
 }
 
 .offer_content-title {
@@ -22,8 +30,20 @@
     color: $white;
     text-align: center;
     margin-bottom: 60px;
+    @include bigtablet(){
+        font-size: 40px;
+    }
+    @include phone(){
+        font-size: 32px;
+     }
+     @include minphone(){
+        font-size: 28px;   
+    }
     span {
         color: $yellow;
+        @include phone(){
+            display: block;
+         }
     }  
 }
 
@@ -37,6 +57,10 @@
         height: 100%;
         object-fit: cover;
     }
+    @include phone(){
+        width: 200px;
+        height: 200px;
+     }
 }
 
 .offer_content-text {
@@ -45,6 +69,21 @@
     color: $white;
     text-align: center;
     line-height: 52px;
+    @include mindescktop(){
+        font-size: 28px;
+        line-height: 45px;
+    }
+    @include bigtablet(){
+        font-size: 24px;
+    }
+    @include phone(){
+        font-size: 20px;
+        line-height: 34px;
+     }
+     @include minphone(){
+        font-size: 16px;
+        line-height: 30px;   
+    }
 }
 
 .offer_content-link {
@@ -59,4 +98,13 @@
     display: block;
     width: max-content;
     box-shadow: 0 3px 25px $dark-grey; 
+    transition: 0.3s;
+    &:hover {
+        background-color: $white;
+        transition: 0.3s;
+    }
+    @include minphone(){
+        font-size: 14px;
+        padding: 27px 15px;   
+    }
 }

@@ -3,7 +3,42 @@ block variables
   - var title = 'Перша Пекарня'
 block content 
         .wrapper
+            .form-wrapper
+                .form_content
+                    .form_content-title Укажите свои данные
+                    .form_content-subtitle И мы свяжемся с вами в ближайшее время
+                    form(action="#", method="post")
+                        input(type="text", name="name" placeholder="Укажите ваше имя")
+                        input(type="text", name="number" placeholder="Укажите ваш номер")
+                        button(type="submit") Отправить
             .bg-header-wrapp
+                header.heade-mobile
+                    .menu-icon
+                        span
+                        span
+                        span
+                    .header_logo
+                        .header_logo-img
+                            img(src="assets/images/icons/logo-white.svg", alt="Logo")
+                    .header-mobile_bg
+                        nav.nav
+                            ul.nav_wrap
+                                li.nav_wrap-item
+                                    a.nav_item-link(href="#") ПОЧЕМУ МЫ
+                                li.nav_wrap-item
+                                    a.nav_item-link(href="#") УНИКАЛЬНОСТЬ
+                                li.nav_wrap-item
+                                    a.nav_item-link(href="#") FAQ
+                                li.nav_wrap-item
+                                    a.nav_item-link(href="#") НАШИ КЛИЕНТЫ
+                                li.nav_wrap-item
+                                    a.nav_item-link(href="#") КОНТАКТЫ
+                        .header_contact-wrapp
+                            .header_contact-item +38 (050) 322-85-41 
+                            .header_contact-item +38 (096) 297-96-61
+                        a(href="#").main-section_features-link.form-link Получить консультацию
+                            span  по сотрудничеству
+
                 header.header
                     .header_logo
                         .header_logo-img
@@ -27,6 +62,8 @@ block content
                                         a.nav_item-link(href="#") НАШИ КЛИЕНТЫ
                                     li.nav_wrap-item
                                         a.nav_item-link(href="#") КОНТАКТЫ
+
+                        
                 section.main-section
                     .main-section_title
                         span ОТКРОЙТЕ
@@ -49,7 +86,7 @@ block content
                             .main-section_features-footer
                                 .main-section_features-footer-title Проверенная модель бизнеса
                                 .main-section_features-footer-text Бизнес будет эффективным при любых экономических условиях!
-                                a(href="#").main-section_features-link Получить консультацию
+                                a(href="#").main-section_features-link.form-link Получить консультацию
                                     span  по сотрудничеству
             section.why-section
                 .why-section_decor

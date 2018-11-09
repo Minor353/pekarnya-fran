@@ -16,6 +16,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 2;
+    @include phone(){
+        background-size: cover;
+     }
 }
 
 .why-section_content-wrap {
@@ -24,6 +27,9 @@
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
+    @include mindescktop(){
+        width: 100%;
+    }
 }
 
 .why-section_content-left {
@@ -32,6 +38,16 @@
     padding-right: 120px;
     border: 1px solid $yellow;
     z-index: 99;
+    @include mindescktop(){
+        margin: 0 auto;
+    }
+    @include maxphone(){
+        padding: 65px 30px;
+     }
+     @include phone(){
+        padding: 40px 30px;
+        padding-bottom: 65px;
+     }
 }
 
 .why-section_left-list {
@@ -50,6 +66,10 @@
     font-size: 48px;
     color: $black;
     margin-bottom: 55px;
+    @include phone(){
+        font-size: 36px;
+        margin-bottom: 35px;
+     }
 }
 
 .why-section_list-title {
@@ -75,6 +95,17 @@
     color: $black;
     text-decoration: none;
     box-shadow: 0 3px 25px $grey;
+    transition: 0.3s;
+    &:hover {
+        background-color: $white;
+        transition: 0.3s;
+    }
+    @include minphone(){
+        display: block;
+        padding: 27px 20px;
+        text-align: center;
+        font-size: 14px;
+     }
 }
 
 .why-section_content-right {
@@ -85,5 +116,8 @@
     z-index: 99;
     img {
         height: 100%;
+    }
+    @include mindescktop(){
+        display: none;
     }
 }

@@ -12,6 +12,9 @@
     box-sizing: border-box;
     position: relative;
     z-index: 9999;
+    @include mindescktop(){
+        width: 100%;
+    }
 }
 
 .how_content-decor {
@@ -25,6 +28,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 2;
+    @include phone(){
+        background-size: cover;
+     }
 }
 
 .how_content-title {
@@ -33,6 +39,12 @@
     color: $black; 
     text-align: center;
     margin-bottom: 70px; 
+    @include bigtablet(){
+        font-size: 40px;
+    }
+    @include phone(){
+        font-size: 36px;
+     }
 }
 
 .how_content-features {
@@ -51,6 +63,9 @@
     height: 193px;
     border: 5px dotted $yellow;
     border-left-color: transparent;
+    @include mindescktop(){
+        display: none;
+    }
 }
 
 .how_content-features::before {
@@ -63,6 +78,9 @@
     height: 210px;
     border: 5px dotted $yellow;
     border-right-color: transparent;
+    @include mindescktop(){
+        display: none;
+    }
 }
 
 .how_features-title {
@@ -84,19 +102,48 @@
 .how_features-item:nth-child(1) {
     width: 100%;
     margin-bottom: -80px;
+    @include maxphone(){
+        width: 50%;
+        margin-bottom: 20px;
+        order: 1;
+     }
+     @include phone(){
+        width: 100%;
+     }
 }
 
 .how_features-item:nth-child(2) {
     width: 50%;
+    @include maxphone(){
+        order: 3;
+     }
+     @include phone(){
+        width: 100%;
+     }
 }
 
 .how_features-item:nth-child(3) {
     width: 50%;
+    @include maxphone(){
+        order: 2;
+        margin-bottom: 20px;
+     }
+     @include phone(){
+        width: 100%;
+     }
 }
 
 .how_features-item:nth-child(4) {
     width: 100%;
     margin-top: -30px;
+    @include maxphone(){
+        width: 50%;
+        margin-top: 0;
+        order: 4;
+     }
+     @include phone(){
+        width: 100%;
+     }
 }
 
 .how_content-link {
@@ -110,7 +157,16 @@
     text-decoration: none;
     display: block;
     width: max-content;
-    box-shadow: 0 3px 25px #B5B5B5;  
+    box-shadow: 0 3px 25px #B5B5B5; 
+    transition: 0.3s;
+    &:hover {
+        background-color: $white;
+        transition: 0.3s;
+    } 
+    @include minphone(){
+        font-size: 14px;
+        padding: 27px 15px;
+    }
 }
 
 .how_features-item-img {
