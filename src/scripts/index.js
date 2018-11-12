@@ -8,6 +8,19 @@ $('.js-accordeon dt').on('click', (ev) => {
 });
 
 
+const btnTriangle = document.querySelectorAll('.fa-caret-right');
+const btnTextTriangleToogle = document.querySelectorAll('.faq_accordeon-header-title');
+
+for(let i = 0; i < btnTextTriangleToogle.length; i++) {
+    btnTextTriangleToogle[i].addEventListener('click', function(){
+      for(let i = 0; i < btnTriangle.length; i++) {
+        btnTriangle[i].classList.remove('fa-caret-right--active');
+      }
+      btnTriangle[i].classList.add('fa-caret-right--active');
+    })
+}
+
+
 
 
 /**Слайдер с отзывами */
@@ -50,6 +63,11 @@ $(document).ready(function() {
       $('.header-mobile_bg').toggleClass('header-mobile_bg--active');
       $('.heade-mobile').toggleClass('heade-mobile--active');
   })
+  $('.nav_item-link--mobile').click(function() {
+      $('.header-mobile_bg').toggleClass('header-mobile_bg--active');
+      $('.heade-mobile').toggleClass('heade-mobile--active');
+      $('.menu-icon').toggleClass('active');
+  })
 })
 
 
@@ -71,3 +89,30 @@ for(let i = 0; i < btnForm.length; i++) {
     }
   })
 }
+
+
+
+
+/**********Плавный скрол***********/
+
+$(".nav_item-link").on("click", function (event) {
+  //отменяем стандартную обработку нажатия по ссылке
+  event.preventDefault();
+  //забираем идентификатор бока с атрибута href
+  var id  = $(this).attr('href'),
+  //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top
+  //анимируем переход на расстояние - top за 500 мс
+  $('body,html').animate({scrollTop: top}, 1200);
+});
+
+
+
+
+
+
+
+/*const textWrapToggle = document.querySelector('#slider-1-layer-10');
+const btnLinkToggle = document.querySelector('#slider-1-layer-8 a');
+
+textWrapToggle.innerHTML = 'Закажи дизайн проекта до 31.12.2018 и получи авторский надзор бесплатно';*/

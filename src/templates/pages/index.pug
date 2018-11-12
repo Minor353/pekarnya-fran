@@ -24,15 +24,15 @@ block content
                         nav.nav
                             ul.nav_wrap
                                 li.nav_wrap-item
-                                    a.nav_item-link(href="#") ПОЧЕМУ МЫ
+                                    a.nav_item-link.nav_item-link--mobile(href="#why-section") ПОЧЕМУ МЫ
                                 li.nav_wrap-item
-                                    a.nav_item-link(href="#") УНИКАЛЬНОСТЬ
+                                    a.nav_item-link.nav_item-link--mobile(href="#features") УНИКАЛЬНОСТЬ
                                 li.nav_wrap-item
-                                    a.nav_item-link(href="#") FAQ
+                                    a.nav_item-link.nav_item-link--mobile(href="#faq") FAQ
                                 li.nav_wrap-item
-                                    a.nav_item-link(href="#") НАШИ КЛИЕНТЫ
+                                    a.nav_item-link.nav_item-link--mobile(href="#reviews") НАШИ КЛИЕНТЫ
                                 li.nav_wrap-item
-                                    a.nav_item-link(href="#") КОНТАКТЫ
+                                    a.nav_item-link.nav_item-link--mobile(href="#map-section") КОНТАКТЫ
                         .header_contact-wrapp
                             .header_contact-item +38 (050) 322-85-41 
                             .header_contact-item +38 (096) 297-96-61
@@ -53,15 +53,15 @@ block content
                             nav.nav
                                 ul.nav_wrap
                                     li.nav_wrap-item
-                                        a.nav_item-link(href="#") ПОЧЕМУ МЫ
+                                        a.nav_item-link(href="#why-section") ПОЧЕМУ МЫ
                                     li.nav_wrap-item
-                                        a.nav_item-link(href="#") УНИКАЛЬНОСТЬ
+                                        a.nav_item-link(href="#features") УНИКАЛЬНОСТЬ
                                     li.nav_wrap-item
-                                        a.nav_item-link(href="#") FAQ
+                                        a.nav_item-link(href="#faq") FAQ
                                     li.nav_wrap-item
-                                        a.nav_item-link(href="#") НАШИ КЛИЕНТЫ
+                                        a.nav_item-link(href="#reviews") НАШИ КЛИЕНТЫ
                                     li.nav_wrap-item
-                                        a.nav_item-link(href="#") КОНТАКТЫ
+                                        a.nav_item-link(href="#map-section") КОНТАКТЫ
 
                         
                 section.main-section
@@ -88,7 +88,7 @@ block content
                                 .main-section_features-footer-text Бизнес будет эффективным при любых экономических условиях!
                                 a(href="#").main-section_features-link.form-link Получить консультацию
                                     span  по сотрудничеству
-            section.why-section
+            section.why-section#why-section
                 .why-section_decor
                 .why-section_content-wrap
                     .why-section_content-left
@@ -111,7 +111,7 @@ block content
                         img(src="assets/images/content/why-bg.png", alt="Печенька")
                 
 
-            section.features
+            section.features#features
                 .features-content  
                     .features-content_title НАШИ ПРЕИМУЩЕСТВА
                     .features-content_subtitle Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне
@@ -141,7 +141,7 @@ block content
                                 .features-content_img
                                     img(src="assets/images/icons/feature-6.svg", alt="Преимущество")
                                 .features-content_list-text От 500 чеков в день
-            section.faq
+            section.faq#faq
                 .faq_content-decor-top
                 .faq_content
                     .faq_content-title ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
@@ -149,7 +149,7 @@ block content
                     .faq_content-main
                         dl.js-accordeon
                             dt.faq_accordeon-header-title
-                                i.fas.fa-caret-right
+                                i.fas.fa-caret-right.fa-caret-right--active
                                 |Я никогда не занимался общепитом, какую помощь с открытием бизнеса я получу?
                             dd
                                 p.faq_accordeon-header-text Пекарни успешно стартовали в таких разноплановых городах: Киев, Днепр, Одесса, Львов, Запорожье, Херсон, Черкассы, Тернополь, Павлоград, Каменское, Мелитополь, Нежин. При первом общении мы проанализируем ваши условия и предложим оптимальное решение.
@@ -220,7 +220,7 @@ block content
                         span и безопасно приумножать деньги.
                     a(href="#").offer_content-link ВСТРЕТИТЬСЯ С СОБСТВЕННИКОМ
             
-            section.reviews
+            section.reviews#reviews
                 .reviews_decor-top
                 .reviews_content
                     .reviews_content-title ОТЗЫВЫ НАШИХ КЛИЕНТОВ
@@ -243,7 +243,7 @@ block content
                                 .reviews_slider-item-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
                             
                             
-            section.map
+            section.map#map-section
                 .map_decor-top
                 .map_content
                     #map
