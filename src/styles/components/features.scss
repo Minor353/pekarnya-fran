@@ -77,6 +77,7 @@
     box-sizing: border-box;
     padding: 40px;
     background-color: rgba(#ffffff, .1);
+    transition: 0.3s;
     border-radius: 50%;
     @include bigtablet(){
         width: 150px;
@@ -87,4 +88,10 @@
         height: 100%;
         object-fit: contain;
     }
+}
+
+.features-content_img:hover {
+    cursor: pointer;
+    background-color: rgba(#000, .5);
+    transition: 0.3s;
 }
