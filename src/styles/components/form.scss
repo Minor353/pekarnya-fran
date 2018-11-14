@@ -31,6 +31,9 @@
             margin-bottom: 15px;
             font-family: 'GothamProMedium', sans-serif;
             border: 3px solid transparent;
+            @include maxphone(){
+                padding: 12px 20px;
+            }
             
         }
         button {
@@ -44,6 +47,9 @@
             margin-top: 20px;
             cursor: pointer;
             border: none;
+            @include maxphone(){
+                padding: 20px 37px;
+            }
             &:hover {
                 background-color: $white;
                 transition: 0.3s;
@@ -57,6 +63,9 @@
     font-size: 48px;
     color: $white;
     text-align: center;
+    @include maxphone(){
+        font-size: 28px;
+    }
 }
 
 .form_content-subtitle {
@@ -65,4 +74,7 @@
     color: $yellow;
     text-align: center;
     margin-bottom: 25px;
+    @include maxphone(){
+        font-size: 18px;
+    }
 }
