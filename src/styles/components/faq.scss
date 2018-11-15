@@ -3,7 +3,7 @@
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-bottom: 200px;   
+    padding-bottom: 315px;   
     height: 650px;
     width: 100%;
     position: relative;   
@@ -15,7 +15,7 @@
         padding-bottom: 245px;
      }
      @include minphone(){
-        padding-bottom: 300px;
+        padding-bottom: 315px;
     }
 }
 
@@ -95,6 +95,7 @@
     font-family: 'GothamProBold';
     font-size: 18px;
     color: $dark-grey;
+    line-height: 26px;
     .fas {
         margin-right: 10px;
     }  
@@ -103,6 +104,7 @@
 .faq_accordeon-header-text {
     font-family: 'GothamProRegular';
     font-size: 16px;
+    line-height: 26px;
     color: $dark-grey;  
 }
 
